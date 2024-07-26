@@ -31,6 +31,7 @@ export async function POST(req: Request) {
     const openai = createOpenAI({
       compatibility: "strict", // strict mode, enable when using the OpenAI API
       apiKey,
+      baseURL: "https://openrouter.ai/api/v1",
     });
 
     llm = openai(model);
@@ -47,7 +48,7 @@ export async function POST(req: Request) {
   }));
 
   const result = await streamText({
-    model: llm,
+    model: "anthropic/claude-3.5-sonnet",
     messages: [
       ...convertToCoreMessages(initialMessages),
       {
