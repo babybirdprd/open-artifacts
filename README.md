@@ -94,7 +94,7 @@ The Artifact viewer is implemented using [Open Artifacts Renderer](https://githu
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Acknowledgments
+## Acknowledgment
 
 - Inspired by [prompt2ui](https://github.com/sullyo/prompt2ui) by [sullyo](https://github.com/sullyo), from which code has been used in this project
 - Anthropic for the Claude API and for doubling the token limit
